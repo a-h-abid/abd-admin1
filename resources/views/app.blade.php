@@ -6,7 +6,7 @@
 
   <title>{{ config('app.name') }}</title>
 
-  @vite('resources/css/app.css')
+  @vite(['resources/css/app.css','resources/js/app.ts'])
 </head>
 <body>
   <h1 class="text-3xl font-bold underline">
