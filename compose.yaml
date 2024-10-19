@@ -1,0 +1,17 @@
+networks:
+  abd-admin:
+    name: 'abd-admin'
+
+services:
+  php:
+    image: 'abd-admin_php:latest'
+    build:
+      dockerfile: ./docker/php/dockerfile
+      context: .
+    env_file:
+      - ./docker/.envs/php-fpm.env
+      - ./docker/.envs/php-ini.env
+    networks:
+      - abd-admin
+    volumes:
+      - ./:/home/appuser/appsrc
