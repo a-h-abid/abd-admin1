@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,9 @@
 
     @vite(['resources/css/app.css', 'resources/js/app.ts'])
 </head>
+
 <body class="bg-white dark:bg-gray-800">
-    <div
-        class="flex flex-col w-full mx-auto mt-16 max-w-lg px-4 py-8 sm:px-6 md:px-8 lg:px-10"
-    >
+    <div class="flex flex-col w-full mx-auto mt-16 max-w-lg px-4 py-8 sm:px-6 md:px-8 lg:px-10">
         <h2 class="self-center mb-8 text-xl font-bold text-gray-600 sm:text-3xl dark:text-white">
             {{ config('app.name') . ' Administrator' }}
         </h2>
@@ -76,4 +76,5 @@
         </div> --}}
     </div>
 </body>
+
 </html>
